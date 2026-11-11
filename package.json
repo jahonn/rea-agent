@@ -1,0 +1,59 @@
+{
+  "name": "rea-agent",
+  "version": "0.1.0",
+  "description": "A portable, evidence-first reverse engineering agent for Claude Code, Codex, dsh, and WorkBuddy.",
+  "type": "module",
+  "bin": {
+    "rea-agent": "./bin/rea-agent.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs",
+    "./doctor": "./src/doctor.mjs",
+    "./install": "./src/install.mjs",
+    "./validate": "./src/validate.mjs",
+    "./version": "./src/version.mjs"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "skills/",
+    "adapters/",
+    "schemas/",
+    "examples/",
+    "docs/",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/rea-agent.mjs && node --check src/cli.mjs && node bin/rea-agent.mjs validate examples/investigation.valid.json --require-authorized",
+    "doctor": "node bin/rea-agent.mjs doctor",
+    "validate:examples": "node bin/rea-agent.mjs validate examples/investigation.valid.json --require-authorized",
+    "prepublishOnly": "npm test && npm run check"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "keywords": [
+    "agent",
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "dsh",
+    "mcp",
+    "reverse-engineering",
+    "rea"
+  ],
+  "author": "Jahonn Ding",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahonn/rea-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jahonn/rea-agent/issues"
+  },
+  "homepage": "https://github.com/jahonn/rea-agent#readme"
+}

@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+dist/
+staging/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.rea-agent-backups/

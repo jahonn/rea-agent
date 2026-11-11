@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "name": "Pending Example",
+    "type": "javascript-electron",
+    "locator": "/absolute/path/to/authorized/target"
+  },
+  "authorization": {
+    "status": "pending",
+    "ownership": "",
+    "purpose": "",
+    "outputScope": "",
+    "disclaimerAccepted": false,
+    "confirmedAt": null
+  },
+  "findings": [],
+  "limitations": [],
+  "unknowns": []
+}

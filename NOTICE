@@ -1,0 +1,7 @@
+REA Agent is an independent community project and is not affiliated with or endorsed by the maintainers of REA.
+
+REA (Reverse Engineer Anything) is a separate project available at https://github.com/morluto/rea under the MIT License. This repository integrates with REA through its documented MCP and CLI interfaces and does not vendor its source code.
+
+Ghidra, Hopper, IDA, JADX, and other analysis tools are third-party products. Their names and licenses remain the property of their respective owners. Users must obtain and use those tools under applicable license terms.
+
+The initial design and implementation of this repository were AI-assisted. No claim is made that the AI assistant owns the repository or provides ongoing maintenance.

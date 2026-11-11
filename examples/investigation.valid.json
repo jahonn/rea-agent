@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "target": {
+    "name": "Synthetic Notes Example",
+    "type": "javascript-electron",
+    "locator": "examples/synthetic-target"
+  },
+  "authorization": {
+    "status": "confirmed",
+    "ownership": "Synthetic fixture owned by the repository contributors",
+    "purpose": "Demonstrate the investigation record format",
+    "outputScope": "Documentation and automated tests only",
+    "disclaimerAccepted": true,
+    "confirmedAt": "2026-11-11T00:00:00Z"
+  },
+  "findings": [
+    {
+      "id": "F-001",
+      "claim": "Synthetic example: a renderer registers a settings IPC route.",
+      "confidence": "observed",
+      "evidence": [
+        {
+          "artifactPath": "examples/synthetic-evidence.txt",
+          "locator": "synthetic-route-registration",
+          "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "summary": "A synthetic evidence entry showing the required locator and hash format."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic example only; no real application was analyzed."
+  ],
+  "unknowns": [
+    "Runtime behavior was not observed."
+  ]
+}

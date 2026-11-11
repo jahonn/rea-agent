@@ -1,0 +1,4 @@
+Synthetic evidence for schema and validator demonstrations only.
+
+synthetic-route-registration: settings:get -> renderer/settings-module
+No real application was inspected and the example SHA-256 value is intentionally non-authentic.
